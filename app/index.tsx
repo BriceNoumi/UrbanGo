@@ -7,7 +7,7 @@ export default function Index() {
     <ScrollView>
         <Text>Some text</Text>
         <View>
-            <Text>Some more text</Text>
+            <Text>Some more text untruc en plsu</Text>
             <Image
                 source = {{uri: 'https://reactnative.dev/docs/assets/p_cat2.png',}}
                 style = {{width : 200, height : 200}}/>
