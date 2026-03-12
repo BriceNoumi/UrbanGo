@@ -39,7 +39,7 @@ const styles = StyleSheet.create({
 export default function LineCard({ id, shortName, longName, color} : Props) {
     return (
         <Pressable style={styles.card}
-                   onPress={() => router.push(`/(timeTables)/(lines)/${id}`)}>
+                   onPress={() => router.push(`/(lines)/${id}`)}>
             <View style={[styles.badge, {backgroundColor : `#${color}`}]}/>
             <View style={{flex : 1}}>
                 <Text style={styles.short}>{shortName}</Text>

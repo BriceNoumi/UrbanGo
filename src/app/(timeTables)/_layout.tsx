@@ -27,7 +27,7 @@ export default function timeTablesLayout(){
         >
             <TopTabs.Screen name = "favorites"  options={{ title : "Favorites"}}/>
             <TopTabs.Screen name = "(lines)"  options={{ title : "Lines"}}/>
-            <TopTabs.Screen name = "stops"  options={{ title : "Stops"}}/>
+            <TopTabs.Screen name = "(stops)"  options={{ title : "Stops"}}/>
 
         </TopTabs>
     )

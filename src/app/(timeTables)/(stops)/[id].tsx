@@ -3,7 +3,6 @@ import { useLocalSearchParams, Stack } from "expo-router";
 import {appColors} from "@/src/theme/appColors";
 import {useState} from "react";
 import {T1_STOPS} from "@/src/app/mocks/linesData";
-import {HeaderTitle} from "@react-navigation/elements";
 
 const styles = StyleSheet.create({
     container : {
@@ -34,7 +33,7 @@ const styles = StyleSheet.create({
     },
 });
 
-export default function LineDetails() {
+export default function StopsDetails() {
     const { id } = useLocalSearchParams();
     const [searchQuery, setSearchQuery] = useState("");
     const filterLineStops = T1_STOPS.filter(stop =>
@@ -42,7 +41,8 @@ export default function LineDetails() {
     );
     return (
         <View style={styles.container}>
-
+            <Stack.Screen options={{ title: `Ligne ${id}` }} />
+            <Text>Détails de la ligne {id}</Text>
         </View>
     );
 }
